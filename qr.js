@@ -8,7 +8,7 @@ btn.addEventListener(`click`, generate);
 function generate() {
     if (input != ``) {
        hy.innerHTML =  ''
-      qrImg.src= `https://quickchart.io/qr?text=${input}`
+      qrImg.src= `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${input}`
       console.log(qrImg.src);
     }
     else{
