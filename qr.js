@@ -6,9 +6,9 @@ const hy = document.getElementById(`hy`)
 btn.addEventListener(`click`, generate);
 
 function generate() {
-    if (input.value != ``) {
+    if (input != ``) {
        hy.innerHTML =  ''
-      qrImg.src= `https://quickchart.io/qr?text=${input}&size=150`
+      qrImg.src= `https://quickchart.io/qr?text=${input}`
       console.log(qrImg.src);
     }
     else{
